@@ -8,7 +8,7 @@ public class CreateFile {
 
     public void createFile () {
         try {
-            File myObj = new File("D:\\JAVA\\notes1.csv");
+            File myObj = new File("\"C:\\Users\\NT\\Documents\\Java_txt\\notes2.csv\"");
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
             } else {

@@ -47,13 +47,12 @@ public class Main {
 
                     username = driver.findElement(By.xpath("/html/body/div[4]/div/section/div/section/aside/div[1]/dl/dd/a")).getText();
                     phonenumber = driver.findElement(By.xpath("/html/body/div[4]/div/section/div/section/div[2]/div[1]/div[6]/div/div/dl[2]/dd/ul/li/a")).getText();
-                    phonenumber = phonenumber.replaceAll(" ", "");
-                    phonenumber = phonenumber.substring(1);
+
 
                     Fwrite fwrite = new Fwrite();
                     fwrite.fwrite(username, phonenumber,curUrlNewTab);
 
-                }
+
             } // end try
 
             catch (org.openqa.selenium.NoSuchElementException e) {
