@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static com.company.Const.SiteURL;
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -23,7 +25,7 @@ public class Main {
         createFile.createFile();
         int t=1;
         for (int i = 0; i < 3; i++) {
-            driver.get("https://www.999.md/");
+            driver.get(SiteURL);
             System.out.println(i);
 
 
